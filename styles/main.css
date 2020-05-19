@@ -21,6 +21,11 @@ from growing with the content inside of them.  */
     height: 100vh;
 }
 
+#overlay {
+    height: 100vh;
+    background-color: #1212129a;
+}
+
 #about {
     background-color: rebeccapurple;
     height: 100vh;
