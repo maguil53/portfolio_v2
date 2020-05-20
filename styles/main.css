@@ -15,6 +15,8 @@ from growing with the content inside of them.  */
 #container {
 }
 
+/* Intro */
+
 #intro {
     /* Don't put height attribute here. This is a container for background image */
 }
@@ -32,6 +34,38 @@ from growing with the content inside of them.  */
     height: 100vh;
     background-color: #12121249;
 }
+
+#navbar-sections {
+    /* background-color: aqua; */
+    height: 15vh;
+}
+
+#navbar-sections ul {
+    height: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+#navbar-sections li {
+    margin-left: 3.5rem;
+}
+
+#navbar-sections a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+
+#hamburger {
+    display: none;
+}
+
+/* About */
 
 #about {
     background-color: rebeccapurple;
