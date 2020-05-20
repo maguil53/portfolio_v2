@@ -32,11 +32,16 @@ from growing with the content inside of them.  */
 
 #overlay {
     height: 100vh;
-    background-color: #12121249;
+    background-color: #1212124d;
+
+    /* Used for navbar, intro-title, background-credit */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #navbar-sections {
-    /* background-color: aqua; */
+    background-color: aqua;
     height: 15vh;
 }
 
@@ -44,9 +49,10 @@ from growing with the content inside of them.  */
     height: 100%;
     padding: 0;
     list-style: none;
+
+    /* Used for navigation links */
     display: flex;
     align-items: center;
-    
 }
 
 #navbar-sections li {
@@ -63,6 +69,24 @@ from growing with the content inside of them.  */
 
 #hamburger {
     display: none;
+}
+
+#intro-title {
+    height: 40vh;
+    background-color: blue;
+}
+
+#background-credit {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#background-credit a {
+    height: 1rem;
+    margin-right: 1.2rem;
 }
 
 /* About */
