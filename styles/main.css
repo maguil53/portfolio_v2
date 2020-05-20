@@ -13,17 +13,24 @@ html, body {
 /* Do NOT add height to the containers, this will prevent them
 from growing with the content inside of them.  */
 #container {
-    
 }
 
 #intro {
-    background-color: red;
-    height: 100vh;
+    /* Don't put height attribute here. This is a container for background image */
+}
+
+#intro-background-image { 
+    background: url('../img/roberto-nickson-rJeuNM5ZFMI-unsplash.jpg') no-repeat center center;
+    /* 
+       To make image look like it's "zoomed" in, we simply
+       set background-size to 120% and adjust it for different screen sizes.
+    */
+    background-size: 115%;
 }
 
 #overlay {
     height: 100vh;
-    background-color: #1212129a;
+    background-color: #12121249;
 }
 
 #about {
@@ -32,7 +39,7 @@ from growing with the content inside of them.  */
 }
 
 #main-projects {
-    /* background-color: limegreen; */
+    /* container */
 }
 
 #main-projects-first {
