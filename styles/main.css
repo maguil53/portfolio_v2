@@ -22,12 +22,19 @@ from growing with the content inside of them.  */
 }
 
 #intro-background-image { 
-    background: url('../img/roberto-nickson-rJeuNM5ZFMI-unsplash.jpg') no-repeat center center fixed;
+    /* Location of image */
+    background: url('../img/roberto-nickson-rJeuNM5ZFMI-unsplash.jpg');
+    
+    /* Background image is centered vertically and horizontally */
+    background-position: center center;
+    background-repeat: no-repeat;
     /* 
-       To make image look like it's "zoomed" in, we simply
-       set background-size to 120% and adjust it for different screen sizes.
+        Background image is fixed so that it doesn't move when
+        the content's height is greater than the image's height 
     */
-    background-size: 115%;
+    background-attachment: fixed;
+    /* Rescales background image based on container's size */
+    background-size: cover;
 }
 
 #overlay {
@@ -146,3 +153,25 @@ from growing with the content inside of them.  */
     height: 100vh;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+
+    #intro-background-image { 
+        /* Using a smaller image to improve performance */
+        background: url('../img/downtown-backrgound-large.jpg');
+        
+        /* 
+           Having the horizontal background-position property set to
+           38% places the buildings right on the middle
+        */
+        background-position: 38% center;
+        background-repeat: no-repeat;
+        /* 
+            Background image is fixed so that it doesn't move when
+            the content's height is greater than the image's height 
+        */
+        background-attachment: fixed;
+        /* Rescales background image based on container's size */
+        background-size: cover;
+    }
+}
