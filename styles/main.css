@@ -1,3 +1,13 @@
+/* 
+    Note to self: When using CSS, the last rule always wins.
+    So be careful with the position of these rules.
+    So make sure your media queries are placed at the bottom of 
+    this file.
+
+    Also, since we're starting off with our desktop version,
+    our media queries should have "max-width" instead of "min-width"
+*/
+
 * {
     /* Adding 0 margin because otherwise spacing is added to everything */
     margin: 0;
@@ -92,21 +102,25 @@ from growing with the content inside of them.  */
     
     /* This is currently giving me issues. Need to figure 
     out how to handle different screen heights. */
-    padding-top: 8%;
+    padding-top: 4%;
     font-weight: 400;
 }
 
+/* 
+    Using ems so that I just need to add font-size to #intro-title
+    in my media queries. (Except on margin-top)
+*/
 #intro-title p:first-of-type {
-    font-size: 5.5rem;
+    font-size: 5.5em;
 }
 
 #intro-title p:nth-of-type(2){
-    font-size: 3rem;
+    font-size: 3em;
     color: rgba(255, 255, 255, 0.801);
 }
 
 #intro-title p:nth-of-type(3){
-    font-size: 1.7rem;
+    font-size: 1.6em;
     color: rgba(255, 255, 255, 0.801);
     margin-top: 2rem;
 }
@@ -154,7 +168,25 @@ from growing with the content inside of them.  */
 }
 
 /* Media Queries */
-@media only screen and (max-width: 767px) {
+
+/* For Smaller sized computers but still no tablet so keep navbar */
+@media only screen and (max-width: 883px) and (max-height: 600px){
+
+    #intro-title {
+        font-size: .8rem;
+        padding-top: 8%;
+    }
+
+    #navbar-sections li {
+        margin-left: 3rem;
+    }
+
+    #navbar-sections a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
 
     #intro-background-image { 
         /* Using a smaller image to improve performance */
@@ -173,5 +205,29 @@ from growing with the content inside of them.  */
         background-attachment: fixed;
         /* Rescales background image based on container's size */
         background-size: cover;
+    }
+}
+
+/* 
+    This is how I'm handling the laptops with hiDPI and mDPI for now,
+    but I'm sure there's a better way to do this...
+*/
+@media only screen and (min-width: 1208px) and (min-height: 800px) {
+
+    #navbar-sections a {
+        color: white;
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+
+    #intro-title {
+        height: 60vh;
+        
+        /* This is currently giving me issues. Need to figure 
+        out how to handle different screen heights. */
+        padding-top: 9%;
+        font-weight: 400;
+        font-size: 1.3rem;
     }
 }
