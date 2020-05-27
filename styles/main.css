@@ -208,11 +208,50 @@ from growing with the content inside of them.  */
     }
 }
 
+/* For tablet screen sizes */
+@media only screen and (max-width: 882px) {
+
+    #intro-background-image { 
+        /* 
+            Keeping this as 32% because as screen gets smaller in width the buildings 
+            start shifting towards the right. Once we get to the mobile part we'll change
+            this percentage
+         */
+        background-position: 32% center;
+    }
+
+    #navbar-sections {
+        display: none;
+    }
+
+    #overlay{
+        padding-left: 0;
+    }
+
+    #intro-title {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 18%;
+    }
+
+    #intro-title p:nth-of-type(2){
+        align-self: center;
+    }
+
+    #intro-title p:nth-of-type(3){
+        align-self: center;
+    }
+}
+
 /* 
     This is how I'm handling the laptops with hiDPI and mDPI for now,
     but I'm sure there's a better way to do this...
+    
+    min-width: sets style from that number and up
+    max-width: set style from that number and below
 */
-@media only screen and (min-width: 1208px) and (min-height: 800px) {
+@media only screen and (min-width: 1280px) and (min-height: 800px) {
 
     #navbar-sections a {
         color: white;
@@ -230,4 +269,28 @@ from growing with the content inside of them.  */
         font-weight: 400;
         font-size: 1.3rem;
     }
+}
+
+/* 
+    This might cause some issues later but I'm trying to handle cases
+    where the screen size might be too tall. This might mess up
+    screens for ipads (AKA width less than 800px-ish), hopefully writing the
+    media-query for our smaller widths will fix this. Also, remember that 
+    the style at the bottom get priority.
+*/
+@media only screen and (min-height: 900px) {
+
+    #navbar-sections a {
+        font-size: 2.9rem;
+        font-weight: 400;
+    }
+
+    #intro-title {
+        
+        /* This is currently giving me issues. Need to figure 
+        out how to handle different screen heights. */
+        padding-top: 9%;
+        font-weight: 400;
+        font-size: 1.5rem;
+    } 
 }
