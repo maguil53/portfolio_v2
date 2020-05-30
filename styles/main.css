@@ -169,6 +169,30 @@ from growing with the content inside of them.  */
 
 /* Media Queries */
 
+/* 
+    This might cause some issues later but I'm trying to handle cases
+    where the screen size might be too tall. This might mess up
+    screens for ipads (AKA width less than 800px-ish), hopefully writing the
+    media-query for our smaller widths will fix this. Also, remember that 
+    the style at the bottom get priority.
+*/
+@media only screen and (min-height: 900px) {
+
+    #navbar-sections a {
+        font-size: 2.9rem;
+        font-weight: 400;
+    }
+
+    #intro-title {
+        
+        /* This is currently giving me issues. Need to figure 
+        out how to handle different screen heights. */
+        padding-top: 9%;
+        font-weight: 400;
+        font-size: 1.5rem;
+    } 
+}
+
 /* For Smaller sized computers but still no tablet so keep navbar */
 @media only screen and (max-width: 883px) and (max-height: 600px){
 
@@ -233,6 +257,7 @@ from growing with the content inside of them.  */
         display: flex;
         flex-direction: column;
         padding-top: 18%;
+        font-size: 1rem;
     }
 
     #intro-title p:nth-of-type(2){
@@ -269,28 +294,4 @@ from growing with the content inside of them.  */
         font-weight: 400;
         font-size: 1.3rem;
     }
-}
-
-/* 
-    This might cause some issues later but I'm trying to handle cases
-    where the screen size might be too tall. This might mess up
-    screens for ipads (AKA width less than 800px-ish), hopefully writing the
-    media-query for our smaller widths will fix this. Also, remember that 
-    the style at the bottom get priority.
-*/
-@media only screen and (min-height: 900px) {
-
-    #navbar-sections a {
-        font-size: 2.9rem;
-        font-weight: 400;
-    }
-
-    #intro-title {
-        
-        /* This is currently giving me issues. Need to figure 
-        out how to handle different screen heights. */
-        padding-top: 9%;
-        font-weight: 400;
-        font-size: 1.5rem;
-    } 
 }
