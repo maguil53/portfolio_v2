@@ -270,6 +270,27 @@ from growing with the content inside of them.  */
 }
 
 /* 
+    For Mobile phones
+*/
+@media only screen and (max-width: 540px) and (max-height: 825px) {
+
+    #intro-title {
+        /* padding-top: 18%; */
+        font-size: .6rem;
+    }
+}
+
+/* 
+    For smaller mobile phones like the iPhone 5/SE
+*/
+@media only screen and (max-width: 329px) and (max-height: 570px) {
+
+    #intro-title {
+        font-size: .5rem;
+    }
+} 
+
+/* 
     This is how I'm handling the laptops with hiDPI and mDPI for now,
     but I'm sure there's a better way to do this...
     
