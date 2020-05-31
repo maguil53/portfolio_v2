@@ -248,6 +248,43 @@ from growing with the content inside of them.  */
         display: none;
     }
 
+    
+    #hamburger {
+        margin: 2rem 0 0 1rem;
+        position: fixed;
+    }
+
+    #hamburger,
+    #hamburger::before,
+    #hamburger::after {
+        /* 
+            Content property is used with the :before and :after 
+            psuedo-elements. It is needed in psuedo elements too or
+            else nothing will show.
+        */
+        content: '';
+        height: 4px;
+        width: 2.5rem;
+        display: block;
+        /* position: absolute; */
+        background-color: white;
+        cursor: pointer;
+    }
+
+    #hamburger::before,
+    #hamburger::after {
+        position: absolute;
+        background-color: white;
+    }
+
+    #hamburger::before {
+        top: 10px;
+    }
+
+    #hamburger::after {
+        bottom: 10px;
+    }
+
     #overlay{
         padding-left: 0;
     }
