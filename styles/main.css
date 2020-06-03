@@ -428,4 +428,38 @@ from growing with the content inside of them.  */
         font-weight: 400;
         font-size: 1.3rem;
     }
+
+    /* About */
+
+    #about {
+        padding-top: 18vh;
+    }
+
+    #about-header-text {
+        font-size: 5em;
+    }
+
+    #about-header-icon img {
+        height: 3.8rem;
+        width: 2.1rem;
+    }
+
+    #about-description {
+        font-size: 2.6em;
+    }
+
+    #about-badges {
+        width: 65%;
+    }
+
+    .badge {
+        height: 1rem;
+        /* Resizes div based on our content */
+        width: auto;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        margin: 1.5rem 1.7rem 0 0;
+        padding: .8em .9em;
+    }
+
 }
