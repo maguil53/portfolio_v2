@@ -153,11 +153,23 @@ from growing with the content inside of them.  */
 #about-header {
     height: 10vh;
     margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #about-header-text {
     font-size: 4em;
     font-weight: bold;
+}
+
+#about-header-icon {
+    margin-left: 2rem;
+}
+
+#about-header-icon img {
+    height: 3rem;
+    width: 1.7rem;
 }
 
 #about-description {
