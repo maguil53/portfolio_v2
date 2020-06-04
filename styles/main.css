@@ -173,14 +173,14 @@ from growing with the content inside of them.  */
 }
 
 #about-description {
-    width: 77%;
+    width: 80%;
     margin-top: 2.4rem;
     font-size: 2.3em;
 }
 
 #about-badges {
     width: 50%;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,7 +194,7 @@ from growing with the content inside of them.  */
     border: 1px solid #3C3C3C;
     border-radius: 5px;
     color: #1A62A7;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
     margin: 1.3rem 1.5rem 0 0;
@@ -240,6 +240,8 @@ from growing with the content inside of them.  */
     screens for ipads (AKA width less than 800px-ish), hopefully writing the
     media-query for our smaller widths will fix this. Also, remember that 
     the style at the bottom get priority.
+
+    Tall Tablets?
 */
 @media only screen and (min-height: 900px) {
 
@@ -259,7 +261,9 @@ from growing with the content inside of them.  */
 }
 
 /* For Smaller sized computers but still no tablet so keep navbar */
-@media only screen and (max-width: 883px) and (max-height: 600px){
+
+/* Doesn't seem like this style is being applied. Think it's being overwritten by something */
+/* @media only screen and (max-width: 883px) and (max-height: 600px){
 
     #intro-title {
         font-size: .8rem;
@@ -278,24 +282,22 @@ from growing with the content inside of them.  */
     }
 
     #intro-background-image { 
-        /* Using a smaller image to improve performance */
+        
         background: url('../img/downtown-backrgound-large.jpg');
         
-        /* 
-           Having the horizontal background-position property set to
-           38% places the buildings right on the middle
-        */
+    
         background-position: 38% center;
         background-repeat: no-repeat;
-        /* 
-            Background image is fixed so that it doesn't move when
-            the content's height is greater than the image's height 
-        */
+     
         background-attachment: fixed;
-        /* Rescales background image based on container's size */
+        
         background-size: cover;
     }
-}
+   
+    #about {
+        background-color: aqua;
+    }
+} */
 
 /* For tablet screen sizes */
 @media only screen and (max-width: 882px) {
@@ -364,7 +366,7 @@ from growing with the content inside of them.  */
         align-self: center;
         display: flex;
         flex-direction: column;
-        padding-top: 18%;
+        padding-top: 7%;
         font-size: 2vw;
     }
 
@@ -374,6 +376,24 @@ from growing with the content inside of them.  */
 
     #intro-title p:nth-of-type(3){
         align-self: center;
+    }
+
+    #about-header-text {
+        font-size: 3.6em;
+    }
+
+    #about-description {
+        width: 85%;
+        margin-top: 2rem;
+        font-size: 2.1em;
+    }
+
+    #about-badges {
+        width: 75%;
+        margin-top: 1.3rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
