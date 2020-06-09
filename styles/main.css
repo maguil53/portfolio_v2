@@ -6,6 +6,14 @@
 
     Also, since we're starting off with our desktop version,
     our media queries should have "max-width" instead of "min-width"
+
+    BREAKPOINTS TO LOOK OVER LATER: 
+        I want to avoid adding more breakpoints, so I'll take care of 
+        the following only after creating media queries for my "base"
+        breakpoint.
+
+            1) @max-width: 581px current height (665px) in About section
+
 */
 
 * {
@@ -241,7 +249,7 @@ from growing with the content inside of them.  */
     media-query for our smaller widths will fix this. Also, remember that 
     the style at the bottom get priority.
 
-    Tall Tablets?
+    Not sure what this media query is for but if it works it works!
 */
 @media only screen and (min-height: 900px) {
 
@@ -258,6 +266,23 @@ from growing with the content inside of them.  */
         font-weight: 400;
         font-size: 1.5rem;
     } 
+
+    #about-header-text {
+        font-size: 5.3em;
+    }
+
+    #about-description {
+        width: 90%;
+        font-size: 3em;
+    }
+
+    #about-badges {
+        width: 80%;
+    }
+
+    .badge {
+        font-size: 1.5rem;
+    }
 }
 
 /* For Smaller sized computers but still no tablet so keep navbar */
@@ -320,9 +345,9 @@ from growing with the content inside of them.  */
         border-radius: 2px;
         padding: 7px;
         position: fixed;
-        margin: 1rem 0 0 1rem;
-        height: 28px;
-        width: 2rem;
+        margin: 2.2rem 0 0 2.2rem;
+        height: 2.2rem;
+        width: 2.2rem;
         cursor: pointer;
     }
     
@@ -378,6 +403,10 @@ from growing with the content inside of them.  */
         align-self: center;
     }
 
+    #about{
+        padding-left: 2.2rem;
+    }
+
     #about-header-text {
         font-size: 3.6em;
     }
@@ -396,6 +425,32 @@ from growing with the content inside of them.  */
         flex-wrap: wrap;
     }
 }
+
+/* For tablets with a tall screen?? */
+@media only screen and (max-width: 882px) and (min-height: 780px){ 
+    #intro-title {
+        padding-top: 25%;
+    }
+
+    #about {
+        /* background-color: blue; */
+    }
+
+    #about-header-text {
+        font-size: 4.5em;
+    }
+
+    #about-header-icon img {
+        height: 3.3rem;
+        width: 1.8rem;
+    }
+
+    #about-description {
+        width: 90%;
+        font-size: 2.4em;
+    }
+}
+
 
 /* 
     For Mobile phones
