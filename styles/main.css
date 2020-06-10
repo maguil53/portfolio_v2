@@ -13,6 +13,7 @@
         breakpoint.
 
             1) @max-width: 581px current height (665px) in About section
+            2) @max-width: 360px and max-height: 640px (Phone in about section)
 
 */
 
@@ -285,45 +286,6 @@ from growing with the content inside of them.  */
     }
 }
 
-/* For Smaller sized computers but still no tablet so keep navbar */
-
-/* Doesn't seem like this style is being applied. Think it's being overwritten by something */
-/* @media only screen and (max-width: 883px) and (max-height: 600px){
-
-    #intro-title {
-        font-size: .8rem;
-        padding-top: 8;
-    }
-
-    #navbar-sections li {
-        margin-left: 3rem;
-    }
-
-    #navbar-sections a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: 400;
-    }
-
-    #intro-background-image { 
-        
-        background: url('../img/downtown-backrgound-large.jpg');
-        
-    
-        background-position: 38% center;
-        background-repeat: no-repeat;
-     
-        background-attachment: fixed;
-        
-        background-size: cover;
-    }
-   
-    #about {
-        background-color: aqua;
-    }
-} */
-
 /* For tablet screen sizes */
 @media only screen and (max-width: 882px) {
 
@@ -345,7 +307,8 @@ from growing with the content inside of them.  */
         border-radius: 2px;
         padding: 7px;
         position: fixed;
-        margin: 2.2rem 0 0 2.2rem;
+        /* 5.5% keeps hamburger aligned with intro-title */
+        margin: 2.2rem 0 0 5.5%;
         height: 2.2rem;
         width: 2.2rem;
         cursor: pointer;
@@ -404,7 +367,8 @@ from growing with the content inside of them.  */
     }
 
     #about{
-        padding-left: 2.2rem;
+        /* padding-left: 2.2rem; */
+        padding-left: 5.5%;
     }
 
     #about-header-text {
@@ -432,10 +396,6 @@ from growing with the content inside of them.  */
         padding-top: 25%;
     }
 
-    #about {
-        /* background-color: blue; */
-    }
-
     #about-header-text {
         font-size: 4.5em;
     }
@@ -455,7 +415,7 @@ from growing with the content inside of them.  */
 /* 
     For Mobile phones
 */
-@media only screen and (max-width: 540px) and (max-height: 825px) {
+@media only screen and (max-width: 600px) and (max-height: 825px) {
 
     #intro-background-image { 
         background-position: 37% center;
@@ -465,6 +425,40 @@ from growing with the content inside of them.  */
         /* Using vh for padding top is a better way to handle phones with taller screens. */
         padding-top: 18vh;
         font-size: 2.7vw;
+    }
+
+    /* Abotu */
+    #about {
+        padding-top: 12vh;
+    }
+
+    #about-heeader-text {
+        font-size: 3.3em;
+    }
+
+    #about-header-icon {
+        margin-left: 1.5rem;
+    }
+
+    #about-header-icon img{
+        height: 2.7rem;
+        width: 1.3rem;
+    }
+
+    #about-description {
+        width: 90%;
+        margin-top: 1.3rem;
+        font-size: 1.8em;
+    }
+
+    #about-badges {
+        width: 90%;
+        margin-top: 0.2rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        margin: 1.2rem 1.1rem 0 0;
     }
 }
 
