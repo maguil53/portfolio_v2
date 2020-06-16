@@ -224,7 +224,23 @@ from growing with the content inside of them.  */
 /* Main Projects */
 
 #main-projects {
-    /* container */
+    /* 
+        container 
+        IMPORTANT! Don't add height to this container
+        or else #main-projects-first/second won't will up 100vh
+    */
+    background-color: #121212;
+    padding-left: 2.5rem;
+    padding-top: 15vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#main-projects-header-text {
+    background-color: blue;
+    font-size: 4em;
+    font-weight: bold;
 }
 
 #main-projects-first {
