@@ -712,7 +712,7 @@ from growing with the content inside of them.  */
     }
 
     #about-badges {
-        width: 65%;
+        width: 52%;
     }
 
     .badge {
@@ -720,9 +720,38 @@ from growing with the content inside of them.  */
         /* Resizes div based on our content */
         width: auto;
         border-radius: 5px;
-        font-size: 1.5rem;
-        margin: 1.5rem 1.7rem 0 0;
+        font-size: 1.1rem;
+        margin: 1.4rem 1.6rem 0 0;
         padding: .8em .9em;
     }
 
+    /* Main Projects */
+    #main-projects-container {
+        padding-top: 0vh;
+    }
+
+    #main-projects-header-text {
+        font-size: 5em;
+    }
+
+    .project {
+        height: 85vh;
+    }
+
+    .main-project-header-text {
+        font-size: 3.4em; 
+        width: 25vw;
+    }
+
+    .main-projects-description {
+        font-size: 2.6em;
+    }
+
+    #links {
+        width: 20%;
+    }
+
+    #main-projects-first {
+        padding-top: 15em;
+    }
 }
