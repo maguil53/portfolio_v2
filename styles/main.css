@@ -380,8 +380,20 @@ from growing with the content inside of them.  */
         font-size: 1.5rem;
     } 
 
+    /* About */
+    #about {
+        padding-top: 17vh;
+        height: 90vh;
+    }
+
     #about-header-text {
         font-size: 5.3em;
+    }
+
+    #about-header-icon img {
+        padding-top: 10%;
+        height: 3.8rem;
+        width: 2rem;
     }
 
     #about-description {
@@ -395,6 +407,33 @@ from growing with the content inside of them.  */
 
     .badge {
         font-size: 1.5rem;
+    }
+
+    /* Main Projects */
+    #main-projects-header-text {
+        font-size: 5.3em;
+    }
+    
+    #main-projects-header-icon img {
+        padding-top: 10%;
+        height: 3.3rem;
+        width: 4rem;
+    }
+
+    #main-projects-first {
+        padding-top: 13em;
+    }
+
+    #main-first-content {
+        width: 40%;
+    }
+
+    .main-project-header-text {
+        width: 25vw;
+    }
+
+    .project {
+        height: 80vh;
     }
 }
 
@@ -419,6 +458,7 @@ from growing with the content inside of them.  */
         border-radius: 2px;
         padding: 7px;
         position: fixed;
+        z-index: 10;
         /* 5.5% keeps hamburger aligned with intro-title */
         margin: 2.2rem 0 0 5.5%;
         height: 2.2rem;
@@ -499,6 +539,66 @@ from growing with the content inside of them.  */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    /* Main Projects  */
+    #main-projects-container {
+        padding-right: 2.5rem;
+    }
+
+    #main-projects-header-text {
+        font-size: 4.5em;
+    }
+
+    .main-project-image {
+        /* position: absolute; */
+        height: 100%;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    #main-projects-first {
+        padding-top: 3em;
+    }
+
+    .main-project-header-text {
+        width: 60vw;
+        font-size: 3.4em;
+    }
+
+    .main-project-description {
+        width: 80%;
+        margin-top: 1.2rem;
+    }
+
+    .main-project-badges {
+        position: absolute;
+        bottom: 2rem;
+    }
+
+    #main-first-content {
+        width: 70%;
+        height: 47%;
+        position: absolute;
+        z-index: 1;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        background-color: rgba(7, 44, 80, 0.803);
+        
+    }
+
+    #main-second-content {
+        width: 80%;
+        height: 47%;
+        position: absolute;
+        position: 1;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        background-color: rgba(7, 44, 80, 0.803); 
     }
 }
 
@@ -626,6 +726,7 @@ from growing with the content inside of them.  */
     So we need to create one where max-width: 570px and min-height: 826px.
 */
 @media only screen and (max-width: 570px) and (min-height: 826px) {
+
     #about {
         padding-top: 12vh;
     }
@@ -743,7 +844,7 @@ from growing with the content inside of them.  */
         width: 25vw;
     }
 
-    .main-projects-description {
+    .main-project-description {
         font-size: 2.6em;
     }
 
