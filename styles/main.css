@@ -302,7 +302,7 @@ project's paperclip has a purple line on it */
 
 #main-first-content {
     height: 100%;
-    width: 50%;
+    width: 89.5%;
     position: relative;
 }
 
@@ -322,8 +322,8 @@ project's paperclip has a purple line on it */
 }
 
 #main-project-image-first {
-    height: 80%;
-    width: 70%;
+    height: 100%;
+    width: 100%;
     background: url('../img/Portfolio_V1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -564,14 +564,22 @@ project's paperclip has a purple line on it */
     }
 
     .main-project-image {
-        /* position: absolute; */
-        height: 100%;
-        width: 100%;
         padding-left: 0;
         padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
         display: grid;
         justify-content: center;
-        
+    }
+
+    #main-project-image-first {
+        background: url('../img/PortfolioV1-Small.png');
+        height: 30rem;
+        width: 90rem; 
+        position: relative;
+        /* background-size: cover; */
+        background-size: 80rem;
+        background-position: center;
     }
 
     #main-projects-first {
@@ -593,14 +601,21 @@ project's paperclip has a purple line on it */
         bottom: 2rem;
     }
 
+    .blue-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(7, 44, 80, 0.803);
+    }
+
     #main-first-content {
-        width: 70%;
-        height: 47%;
+        height: 45%;
+        width: 80%;
         position: absolute;
         z-index: 1;
         padding-top: 2rem;
         padding-left: 1rem;
-        background-color: rgba(7, 44, 80, 0.803);
+        /* background-color: rgba(7, 44, 80, 0.803); */
         
     }
 
