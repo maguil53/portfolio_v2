@@ -573,13 +573,19 @@ project's paperclip has a purple line on it */
     }
 
     #main-project-image-first {
-        background: url('../img/PortfolioV1-Small.png');
         height: 30rem;
         width: 90rem; 
-        position: relative;
-        /* background-size: cover; */
+        position: relative; 
         background-size: 80rem;
-        background-position: center;
+        background-position: center 30%;
+    }
+
+    #main-project-image-second {
+        height: 30rem;
+        width: 90rem; 
+        position: relative; 
+        background-size: 80rem; 
+        background-position: 10% 5%;
     }
 
     #main-projects-first {
@@ -605,7 +611,7 @@ project's paperclip has a purple line on it */
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: rgba(7, 44, 80, 0.803);
+        background-color: rgba(7, 44, 80, 0.817);
     }
 
     #main-first-content {
@@ -615,18 +621,15 @@ project's paperclip has a purple line on it */
         z-index: 1;
         padding-top: 2rem;
         padding-left: 1rem;
-        /* background-color: rgba(7, 44, 80, 0.803); */
-        
     }
 
     #main-second-content {
-        width: 80%;
+        width: 90%;
         height: 47%;
         position: absolute;
-        position: 1;
+        z-index: 1;
         padding-top: 2rem;
         padding-left: 1rem;
-        background-color: rgba(7, 44, 80, 0.803); 
     }
 }
 
