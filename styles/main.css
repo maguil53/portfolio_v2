@@ -561,7 +561,7 @@ project's paperclip has a purple line on it */
     }
 
     #main-projects-header-text {
-        font-size: 4.5em;
+        font-size: 3.6em;
     }
 
     .main-project-image {
@@ -595,14 +595,16 @@ project's paperclip has a purple line on it */
 
     .main-project-header-text {
         width: 100%;
-        font-size: 3.4em;
+        font-size: 3.2em;
         align-self: center;
+
+        grid-column: 1/3;
     }
 
     .main-project-description {
         width: 85%;
         font-size: 2.1rem;
-        margin-top: 0;
+        margin-top: .5rem;
         grid-column: 1/3;
         grid-row-start: 2;
     }
@@ -731,6 +733,79 @@ project's paperclip has a purple line on it */
         margin: .8rem .8rem 0 0;
         padding: .55em .6em;
     }
+
+    /* Main Projects */
+
+    .project {
+        height: 70vh;
+    }
+
+    .main-project-header-text {
+        font-size: 2.8em;
+    }
+
+    .main-project-description {
+        font-size: 1.8rem;
+    }
+
+    #main-projects-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #projects-header {
+        padding-left: 5.5%;
+    }
+
+    .main-project-badges {
+        width: 100%;
+    }
+
+    #links { 
+        margin-right: 0;
+    }
+
+    #octocat-link img {
+        height: 2.2rem;
+        width: 2.7rem;
+    }
+
+    #source-link img {
+        height: 2rem;
+        width: 1.8rem;
+    }
+
+    #main-first-content {
+        height: 22rem;
+        width: 90%;
+        padding-left: 5.5%;
+    }
+
+    #main-project-image-first {
+        height: 23rem;
+    }
+
+    #main-second-content {
+        height: 22rem;
+        width: 90%;
+        padding-left: 5.5%;
+    }
+
+    #main-project-image-second {
+        height: 23rem; 
+    }
+
+    #main-projects-header-icon {
+        margin-left: 1.3rem;
+        padding-top: .5rem;
+    }
+
+    #main-projects-header-icon img {
+        height: 2.3rem;
+        width: 2.9rem;
+    }
+
+
 }
 
 /* 
@@ -821,6 +896,15 @@ project's paperclip has a purple line on it */
 
     .badge {
         font-size: 0.9rem;
+    }
+
+    /* Main Projects */
+    #main-projects-container {
+        padding-top: 10vh;
+    }
+
+    .project {
+        height: 54vh;
     }
 }
 
