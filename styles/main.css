@@ -344,7 +344,7 @@ project's paperclip has a purple line on it */
 }
 
 .main-project-badges {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -433,8 +433,16 @@ project's paperclip has a purple line on it */
         width: 4rem;
     }
 
+    .main-project-description {
+        font-size: 3em;
+    }
+
     #main-projects-first {
         padding-top: 10em;
+    }
+
+    .main-project-badges {
+        flex-wrap: nowrap;
     }
 
     #main-first-content {
@@ -664,6 +672,27 @@ project's paperclip has a purple line on it */
 
 /* For tablets with a tall screen?? */
 @media only screen and (max-width: 882px) and (min-height: 780px){ 
+
+    #hamburger,
+    #hamburger::before,
+    #hamburger::after {
+        height: 3px;
+    }
+
+    #hamburger::before {
+        top: -12px;
+    }
+
+    #hamburger::after {
+        bottom: -12px;
+    }
+
+    #hamburger-container {
+        height: 2.6rem;
+        width: 2.6rem;
+        padding: 9px;
+    }
+
     #intro-title {
         padding-top: 25%;
     }
@@ -681,6 +710,34 @@ project's paperclip has a purple line on it */
         width: 90%;
         font-size: 2.4em;
     }
+
+    /* Main Projects */
+    #main-projects-container {
+        padding-top: 10vh;
+    }
+
+    #main-projects-header-text {
+        font-size: 4.5em;
+    }
+
+    .main-project-description {
+        font-size: 2.4em;
+    }
+
+    .project {
+        height: 65vh;
+    }
+
+    #octocat-link img {
+        height: 3rem;
+        width: 3.2rem;
+    }
+
+    #source-link img {
+        height: 2.5rem;
+        width: 2.3rem;
+    }
+    
 }
 
 
@@ -926,6 +983,28 @@ project's paperclip has a purple line on it */
     #about-badges {
         width: 90%;
     }
+
+    /* Main Projects */
+    #main-projects-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #projects-header {
+        padding-left: 5.5%;
+    }
+
+    #main-first-content {
+        padding-left: 5.5%;
+    }
+
+    #main-second-content {
+        padding-left: 5.5%;
+    }
+
+    #links {
+        margin-right: 0;
+    }
 }
 
 /* 
@@ -960,6 +1039,10 @@ project's paperclip has a purple line on it */
 
     .project {
         height: 54vh;
+    }
+
+    #main-projects-header-text {
+        font-size: 3.9rem;
     }
 }
 
