@@ -74,9 +74,9 @@ from growing with the content inside of them.  */
 }
 
 #navbar-sections {
-    /* background-color: aqua; */
     position: fixed;
     height: 15vh;
+    z-index: 100;
 }
 
 #navbar-sections ul {
@@ -212,7 +212,6 @@ from growing with the content inside of them.  */
     text-align: center;
     margin: 1.3rem 1.5rem 0 0;
     padding: .7em .6em;
-
     display: flex;
     align-items: center;
 }
@@ -388,7 +387,7 @@ project's paperclip has a purple line on it */
 
 .additional-project-item {
     height: 20rem;
-    width: 40vw;
+    width: 35vw;
     padding-left: 1rem;
     background-color: #041E37;
     border: 1px solid #104272;
@@ -397,7 +396,7 @@ project's paperclip has a purple line on it */
 
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .additional-project-item-header {
@@ -757,6 +756,38 @@ project's paperclip has a purple line on it */
         grid-template-rows: 1fr 3fr 2fr;
         grid-template-columns: 3fr 1fr
     }
+
+    /* Additional Projects */
+    #additional-projects-container {
+        height: 100vh;
+    }
+
+    #additional-projects-item-container {
+        height: 60vh;
+        padding-top: 2rem;
+    }
+
+    #additional-projects-header-text {
+        font-size: 3.6em;
+    }
+
+    .additional-project-item {
+        height: 18rem;
+    }
+
+    .additional-project-item-header {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .additional-project-item-description {
+        font-size: 1.4rem;
+    }
+
+    .tool {
+        font-size: 1rem;
+        margin-right: .4rem;
+    }
 }
 
 /* For tablets with a tall screen?? */
@@ -826,6 +857,24 @@ project's paperclip has a purple line on it */
         height: 2.5rem;
         width: 2.3rem;
     }
+
+    /* Additional Projects */
+    #additional-projects-item-container {
+        height: 80vh;
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+
+    #additional-projects-header-text {
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    .additional-project-item {
+        width: 60vw;
+    }
+
+
     
 }
 
@@ -1224,4 +1273,15 @@ project's paperclip has a purple line on it */
     #main-projects-first {
         padding-top: 12em;
     }
+
+    /* Additional Projects */
+    #additional-projects-item-container {
+        height: 60vh;
+    }
+
+    .additional-project-item {
+        height: 23rem;
+        padding-left: 1.5rem;
+    }
+
 }
