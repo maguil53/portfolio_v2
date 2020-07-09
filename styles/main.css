@@ -392,7 +392,7 @@ project's paperclip has a purple line on it */
     background-color: #041E37;
     border: 1px solid #104272;
     border-radius: 5px;
-    box-shadow: 2px 2px 12px #000000;
+    box-shadow: 2px 2px 6px #000000;
 
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
@@ -544,6 +544,20 @@ project's paperclip has a purple line on it */
     .project {
         height: 80vh;
     }
+
+    #main-project-image-second {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Addditional Projects */
+    #additional-projects-container {
+        height: 80vh;
+    }
+
+    #additional-projects-item-container {
+        height: 55vh;
+    }
 }
 
 /* For tablet screen sizes */
@@ -672,6 +686,8 @@ project's paperclip has a purple line on it */
     #main-project-image-first {
         height: 30rem;
         width: 90rem; 
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px #000000;
         position: relative; 
         background-size: 80rem;
         background-position: center 30%;
@@ -680,6 +696,8 @@ project's paperclip has a purple line on it */
     #main-project-image-second {
         height: 30rem;
         width: 90rem; 
+        border-radius: 5px;
+        box-shadow: 2px 2px 15px #000000;
         position: relative; 
         background-size: 80rem; 
         background-position: 10% 0%;
@@ -728,6 +746,7 @@ project's paperclip has a purple line on it */
         position: absolute;
         height: 100%;
         width: 100%;
+        border-radius: 5px;
         background-color: rgba(7, 44, 80, 0.817);
     }
 
@@ -764,7 +783,6 @@ project's paperclip has a purple line on it */
 
     #additional-projects-item-container {
         height: 60vh;
-        padding-top: 2rem;
     }
 
     #additional-projects-header-text {
@@ -773,6 +791,7 @@ project's paperclip has a purple line on it */
 
     .additional-project-item {
         height: 18rem;
+        width: 40vw;
     }
 
     .additional-project-item-header {
@@ -782,6 +801,7 @@ project's paperclip has a purple line on it */
 
     .additional-project-item-description {
         font-size: 1.4rem;
+        width: 95%;
     }
 
     .tool {
@@ -834,6 +854,7 @@ project's paperclip has a purple line on it */
     /* Main Projects */
     #main-projects-container {
         padding-top: 10vh;
+        margin-top: 5vh;
     }
 
     #main-projects-header-text {
@@ -859,19 +880,27 @@ project's paperclip has a purple line on it */
     }
 
     /* Additional Projects */
+    #additional-projects-container {
+        height: 85vh;
+    }
+
     #additional-projects-item-container {
-        height: 80vh;
-        padding-top: 2rem;
-        flex-direction: column;
+        height: 45vh;
     }
 
     #additional-projects-header-text {
         font-size: 4.5em;
         text-align: center;
+        padding-left: 5.5%;
+        padding-right: 5.5%;
     }
 
     .additional-project-item {
-        width: 60vw;
+        width: 43vw;
+    }
+
+    .additional-project-item-header {
+        font-size: 2.2rem;
     }
 
 
@@ -933,14 +962,20 @@ project's paperclip has a purple line on it */
 
     .project {
         height: 70vh;
+        display: flex;
+        justify-content: center;
     }
 
     .main-project-header-text {
         font-size: 2.8em;
+        line-height: 1;
+        margin-top: .5rem;
     }
 
     .main-project-description {
         font-size: 1.8rem;
+        width: 100%;
+        margin-top: .5rem;
     }
 
     #main-projects-container {
@@ -973,21 +1008,29 @@ project's paperclip has a purple line on it */
     #main-first-content {
         height: 22rem;
         width: 90%;
-        padding-left: 5.5%;
+        padding-left: 0;
+        padding-top: 1rem;
     }
 
     #main-project-image-first {
         height: 23rem;
+        width: 100%;
+    }
+
+    .blue-overlay {
+        width: 100%;
     }
 
     #main-second-content {
         height: 22rem;
         width: 90%;
-        padding-left: 5.5%;
+        padding-left: 0;
+        padding-top: 1rem;
     }
 
     #main-project-image-second {
         height: 23rem; 
+        width: 100%;
     }
 
     #main-projects-header-icon {
@@ -1000,7 +1043,52 @@ project's paperclip has a purple line on it */
         width: 2.9rem;
     }
 
+    /* Additional Projects */
+    #additional-projects-container {
+        height: 130vh;
+        padding-top: 4rem;
+    }
 
+    #additional-projects-item-container {
+        height: 110vh;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .additional-project-item {
+        width: 80%;
+        height: 17rem;
+        padding-right: 1rem;
+    }
+
+    #additional-projects-header-text {
+        line-height: 1.1;
+        padding-left: 5.5%;
+    }
+
+    .additional-project-item-header {
+        font-size: 1.9rem;
+    }
+
+    .additional-project-item-description {
+        width: 100%;
+    }
+
+    .additional-project-item-links {
+        margin-right: 0rem;
+    }
+    
+    .additional-project-octocat-link img {
+        height: 2rem;
+        width: 2.3rem;
+    }
+
+    .additional-project-source-link img {
+        height: 1.6rem;
+        width: 1.7rem;
+        margin-top: 15%;
+    }
 }
 
 /* 
@@ -1069,13 +1157,19 @@ project's paperclip has a purple line on it */
     }
 
     .main-project-description {
-        width: 90%;
+        width: 100%;
         font-size: 1.5rem;
+    }
+
+    .main-project-badges .badge {
+        margin: unset;
+        margin-right: 1rem;
     }
 
     .project {
         height: 60vh;
     }
+
     
     #main-projects-first {
         padding-top: 2rem;
@@ -1098,6 +1192,42 @@ project's paperclip has a purple line on it */
 
     #main-project-image-second {
         height: 19rem;
+    }
+
+    /* Additional Projects */
+    #additional-projects-header-text { 
+        font-size: 3em;
+    }
+
+    #additional-projects-container {
+        height: 140vh;
+        padding-top: 5rem;
+    }
+
+    #additional-projects-item-container {
+        height: 120vh;
+    }
+
+    .additional-project-item {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .additional-project-item-description {
+        padding-top: .3rem;
+    }
+
+    .additional-project-octocat-link img {
+        height: 1.9rem;
+        width: 2.1rem;
+    }
+
+    .additional-project-source-link img { 
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+
+    .tool {
+        font-size: .9rem;
     }
 
 } 
@@ -1143,6 +1273,45 @@ project's paperclip has a purple line on it */
     #links {
         margin-right: 0;
     }
+
+    /* Additional Projects */
+    #additional-projects-container {
+        height: 115vh;
+        padding-top: 4rem;
+    }
+
+    #additional-projects-item-container {
+        height: 90vh;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        justify-content: space-evenly;
+    }
+
+    .additional-project-item {
+        margin-left: 5.5%;
+        margin-right: 5.5%;
+        width: 85%;
+        height: 20rem;
+    }
+
+    #additional-projects-header-text {
+        text-align: left;
+    }
+
+    .additional-project-item-header {
+        font-size: 2.3rem;
+    }
+
+    .additional-project-item-description {
+        font-size: 1.7rem;
+    }
+    
+
+    .tool {
+        font-size: 1.2rem;
+    }
 }
 
 /* 
@@ -1172,7 +1341,7 @@ project's paperclip has a purple line on it */
 
     /* Main Projects */
     #main-projects-container {
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     .project {
@@ -1181,6 +1350,22 @@ project's paperclip has a purple line on it */
 
     #main-projects-header-text {
         font-size: 3.9rem;
+    }
+
+    /* Additional Projects  */
+    #additional-projects-header-text {
+        text-align: left;
+        font-size: 3.9em;
+    }
+
+    #additional-projects-container {
+        height: 110vh;
+        padding-top: 7rem;
+    }
+
+    #additional-projects-item-container {
+        height: 80vh;
+        padding-top: 1rem;
     }
 }
 
