@@ -248,7 +248,7 @@ from growing with the content inside of them.  */
 }
 
 #main-projects-first {
-    padding-top: 7.2em;
+    padding-top: 3em;
 }
 
 #projects-header {
@@ -558,7 +558,7 @@ project's paperclip has a purple line on it */
     }
 
     #main-projects-first {
-        padding-top: 10em;
+        padding-top: 4em;
     }
 
     .main-project-badges {
@@ -1498,7 +1498,7 @@ project's paperclip has a purple line on it */
     }
 
     #main-projects-first {
-        padding-top: 12em;
+        padding-top: 3em;
     }
 
     /* Additional Projects */
