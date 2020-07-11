@@ -590,6 +590,10 @@ project's paperclip has a purple line on it */
     #additional-projects-item-container {
         height: 55vh;
     }
+
+    #project-overlay {
+        background-size: 20rem 35rem;
+    }
 }
 
 /* For tablet screen sizes */
@@ -1126,6 +1130,10 @@ project's paperclip has a purple line on it */
         height: 1.4rem;
         width: 2rem;
     }
+
+    #project-overlay {
+        background-size: 12rem 22rem;
+    }
 }
 
 /* 
@@ -1350,7 +1358,6 @@ project's paperclip has a purple line on it */
         font-size: 1.7rem;
     }
     
-
     .tool {
         font-size: 1.2rem;
     }
@@ -1509,6 +1516,10 @@ project's paperclip has a purple line on it */
     .additional-project-item {
         height: 23rem;
         padding-left: 1.5rem;
+    }
+
+    #project-overlay {
+        background-size: 19rem 34rem;
     }
 
 }
