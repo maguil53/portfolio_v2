@@ -109,6 +109,36 @@ from growing with the content inside of them.  */
     display: none;
 }
 
+#hamburger-nav {
+    position: fixed;
+    transform: scale(0,1);
+    transform-origin: right;
+    opacity: 0;
+    transition: transform 180ms ease-in-out, opacity .4s ease-in;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hamburger-nav-close {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hamburger-nav-text {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
 #intro-title {
     height: 60vh;
     
