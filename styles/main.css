@@ -454,6 +454,50 @@ project's paperclip has a purple line on it */
     height: 1.8rem;
     width: 1.9rem;
 }
+
+.additional-project-image-link img{
+    cursor: pointer;
+    height: 1.6rem;
+    width: 2.3rem;
+}
+
+#project-overlay {
+    background: url('../img/acm-social.png');
+    background-size: 17rem 30rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity .3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: #0000005f;
+}
+/* background: url('../img/roberto-nickson-rJeuNM5ZFMI-unsplash.jpg');
+    
+    Background image is centered vertically and horizontally
+    background-position: center center;
+    background-repeat: no-repeat;
+
+        Background image is fixed so that it doesn't move when
+        the content's height is greater than the image's height 
+
+    background-attachment: fixed;
+    Rescales background image based on container's size
+    background-size: cover; */
+
+#project-overlay-close {
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 1.4rem;
+}
 /* Media Queries */
 
 /* 
