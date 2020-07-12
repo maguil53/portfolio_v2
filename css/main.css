@@ -58,9 +58,6 @@ from growing with the content inside of them.  */
     /* Rescales background image based on container's size */
     background-size: cover;
 
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
 }
 
 #overlay {
