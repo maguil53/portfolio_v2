@@ -26,6 +26,7 @@ let contactLink = document.getElementById('contact-link');
 let intro = document.getElementById('intro');
 let about = document.getElementById('about');
 let mainProjects = document.getElementById('main-projects-container');
+let contact = document.getElementById('contact-container');
 // There is no Contact section so far...soooo yeah get on that.
 
 hamburger.addEventListener('click', function() {
@@ -52,7 +53,7 @@ projectsNav.addEventListener('click', () => {
 });
 
 contactNav.addEventListener('click', () => {
-   // There is no Contact section!!!
+   contact.scrollIntoView();
    removeNav();  
 });
 
@@ -71,7 +72,11 @@ projectsLink.addEventListener('click', (e) => {
     e.preventDefault();
     mainProjects.scrollIntoView({behavior: "smooth"});
 });
-// contactLink.addEventListener('click', () => );
+
+contactLink.addEventListener('click', (e) => { 
+    e.preventDefault();
+    contact.scrollIntoView({behavior: "smooth"});
+});
 
 function removeNav() {
     hamburgerNavigation.style.opacity = "0"; 
