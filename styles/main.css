@@ -969,7 +969,10 @@ project's paperclip has a purple line on it */
         font-size: 2.2rem;
     }
 
-
+    /* Hamburger Navigation */
+    .hamburger-nav-text {
+        font-size: 3.5rem;
+    }
     
 }
 

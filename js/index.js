@@ -9,11 +9,18 @@ let hamburgerNavigation = document.getElementById('hamburger-nav');
 let hamburgerClose = document.getElementById('hamburger-nav-close');
 
 // Navigation
-// Note that there is 1 id for Home but there are two links
+
+// Hamburger links 
 let homeNav = document.getElementById('home-nav');
 let aboutNav = document.getElementById('about-nav');
 let projectsNav = document.getElementById('projects-nav');
 let contactNav = document.getElementById('contact-nav');
+
+// Navigation links
+let homeLink = document.getElementById('home-link');
+let aboutLink = document.getElementById('about-link');
+let projectsLink = document.getElementById('projects-link');
+let contactLink = document.getElementById('contact-link');
 
 // Navigation Stops
 let intro = document.getElementById('intro');
@@ -26,29 +33,45 @@ hamburger.addEventListener('click', function() {
     hamburgerNavigation.style.opacity = "1";  
 });
 
-hamburgerClose.addEventListener('click', function() {
-    removeNav();
-});
+hamburgerClose.addEventListener('click', () => removeNav());
 
-homeNav.addEventListener('click', function() {
+// Hamburger links
+homeNav.addEventListener('click', () => {
     intro.scrollIntoView();
-    removeNav();
+    removeNav(); 
 });
 
-aboutNav.addEventListener('click', function() {
+aboutNav.addEventListener('click', () => {
     about.scrollIntoView();
-    removeNav();
+    removeNav(); 
 });
 
-projectsNav.addEventListener('click', function() {
+projectsNav.addEventListener('click', () => {
     mainProjects.scrollIntoView();
-    removeNav();
+    removeNav();  
 });
 
-contactNav.addEventListener('click', function() {
-    // There is no Contact section!!!
-    removeNav();
+contactNav.addEventListener('click', () => {
+   // There is no Contact section!!!
+   removeNav();  
 });
+
+// Navigation links
+homeLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    intro.scrollIntoView({behavior: "smooth"});
+});
+
+aboutLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    about.scrollIntoView({behavior: "smooth"});
+});
+
+projectsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainProjects.scrollIntoView({behavior: "smooth"});
+});
+// contactLink.addEventListener('click', () => );
 
 function removeNav() {
     hamburgerNavigation.style.opacity = "0"; 
