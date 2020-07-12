@@ -708,6 +708,10 @@ project's paperclip has a purple line on it */
         padding-left: 0;
     }
 
+    #intro-background-image {
+        background-attachment: scroll;
+    }
+
     #intro-title {
         align-self: center;
         display: flex;
@@ -1003,15 +1007,13 @@ project's paperclip has a purple line on it */
 
 /* 
     For Mobile phones
-
-    HERE!!!
 */
 @media only screen and (max-width: 600px) and (max-height: 825px) {
 
     #intro-background-image { 
         background-position: 37% center;
 
-
+        /* Temporary fix for background image issue */
         background-attachment: scroll;
     }
 
